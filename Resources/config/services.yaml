@@ -1,0 +1,9 @@
+services:
+
+    Fbeen\AdminBundle\Admin\AdminChain:
+        public: true
+        
+    Fbeen\AdminBundle\Controller\AdminController:
+        tags: ['controller.service_arguments']
+        arguments: ['@Fbeen\AdminBundle\Admin\AdminChain']
+        public: true

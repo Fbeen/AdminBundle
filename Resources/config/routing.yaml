@@ -1,0 +1,9 @@
+fbeen_admin_dashboard:
+    path:      /admin/
+    defaults:  { _controller: FbeenAdminBundle:Admin:dashboard }
+    methods:  [GET]
+    
+fbeen_admin_index:
+    path:      /admin/{slug}
+    controller: Fbeen\AdminBundle\Controller\AdminController::index
+    methods:  [GET]
